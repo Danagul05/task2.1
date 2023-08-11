@@ -1,8 +1,14 @@
 public class Birch extends Tree  implements Printable {
-    int barrelWidth ;
+    int barrelWidth;
+
+    public Birch(int height, int age, String name,int barrelWidth) {
+        super(height, age, name);
+        this.barrelWidth=barrelWidth;
+    }
 
     @Override
     public String print() {
-        return name + height + age + barrelWidth;
+        System.out.println( name + height + age + barrelWidth);
+        return null;
     }
 }
